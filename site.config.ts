@@ -16,6 +16,7 @@ export default siteConfig({
   // open graph metadata (optional)
   description: 'Mon blog personnel',
 
+
   // social usernames (optional)
   twitter: null,
   github: 'theodore-dhenain',
