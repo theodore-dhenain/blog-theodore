@@ -10,7 +10,7 @@ export default siteConfig({
 
   // basic site info (required)
   name: 'Blog de Théodore Dhénain',
-  domain: 'theodore-dhenain.vercel.app',
+  domain: 'theodore.dhenain.fr',
   author: 'Théodore Dhénain',
 
   // open graph metadata (optional)
