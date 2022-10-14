@@ -14,7 +14,7 @@ export default siteConfig({
   author: 'Théodore Dhénain',
 
   // open graph metadata (optional)
-  description: 'Mon blog personnel, créé par ma super famille pour mon anniversaire !',
+  description: 'Mon blog personnel.',
 
   // social usernames (optional)
   twitter: null,
