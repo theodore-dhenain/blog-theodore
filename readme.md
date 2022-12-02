@@ -10,7 +10,7 @@
 
 ## Intro
 
-This repo is what I use to power my personal blog and portfolio site [ambroise.dhenain.com](https://ambroise.dhenain.com/).
+This repo is what I use to power my personal blog and portfolio site [blog.theodore.dhenain.com](https://blog.theodore.dhenain.com/).
 
 It uses Notion as a CMS, [react-notion-x](https://github.com/NotionX/react-notion-x), [Next.js](https://nextjs.org/), and [Vercel](https://vercel.com).
 

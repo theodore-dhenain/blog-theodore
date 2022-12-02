@@ -2,25 +2,24 @@ import { siteConfig } from './lib/site-config'
 
 export default siteConfig({
   // the site's root Notion page (required)
-  rootNotionPageId: 'bfe72295c71b4013b4bea58f22b6cd1c',
+  rootNotionPageId: 'a70ccafbe4d04cc7a3d02e4de3b97df1',
 
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: 'Ambroise Dhenain - Tech advisor and no-code consultant',
-  domain: 'ambroise-dhenain.vercel.app',
-  author: 'Ambroise Dhenain',
+  name: 'Blog de Théodore Dhénain',
+  domain: 'theodore.dhenain.fr',
+  author: 'Théodore Dhénain',
 
   // open graph metadata (optional)
-  description:
-    'A 🇫🇷  entrepreneur, CTO and software developer who loves building things and solving problems. (no-code, co-CTO)',
+  description: 'Mon blog personnel.',
 
   // social usernames (optional)
-  twitter: 'vadorequest',
-  github: 'Vadorequest',
-  linkedin: 'ambroise-dhenain',
+  twitter: null,
+  github: 'theodore-dhenain',
+  linkedin: 'th%C3%A9odore-dh%C3%A9nain-886447156',
   // newsletter: '#', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
 
@@ -56,12 +55,12 @@ export default siteConfig({
   navigationLinks: [
     {
       title: '👋 About',
-      pageId: '3e8999c432fe46fb806cd8ba6f0cd450',
+      pageId: '3Db9d658a17b904708b0ff46f6be45493b',
       isBio: true
     },
     {
       title: '✉️ Contact',
-      pageId: '2c99577ce5b7413aa71f417f45afb55e'
+      pageId: '3D27941a6ef7854aa99a8d97c30665f7ac'
     }
   ]
 })
