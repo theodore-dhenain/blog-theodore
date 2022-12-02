@@ -55,12 +55,12 @@ export default siteConfig({
   navigationLinks: [
     {
       title: '👋 À propos',
-      pageId: '3Db9d658a17b904708b0ff46f6be45493b',
+      pageId: 'b9d658a17b904708b0ff46f6be45493b',
       isBio: true
     },
     {
       title: '✉️ Contact',
-      pageId: '3D27941a6ef7854aa99a8d97c30665f7ac'
+      pageId: '27941a6ef7854aa99a8d97c30665f7ac'
     }
   ]
 })
