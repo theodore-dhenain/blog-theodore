@@ -48,8 +48,7 @@ export default siteConfig({
   // }
   pageUrlOverrides: null,
 
-  pageUrlAdditions: {
-  },
+  pageUrlAdditions: {},
 
   // whether to use the default notion navigation style or a custom one with links to
   // important pages

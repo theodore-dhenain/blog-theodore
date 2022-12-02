@@ -1,4 +1,3 @@
-import { NavigationLink } from '@/lib/site-config';
 import * as React from 'react'
 import dynamic from 'next/dynamic'
 import Image from 'next/image'
@@ -24,6 +23,7 @@ import * as types from '@/lib/types'
 import { mapImageUrl } from '@/lib/map-image-url'
 import { getCanonicalPageUrl, mapPageUrl } from '@/lib/map-page-url'
 import { searchNotion } from '@/lib/search-notion'
+import { NavigationLink } from '@/lib/site-config'
 import { useDarkMode } from '@/lib/use-dark-mode'
 
 import { Footer } from './Footer'
@@ -210,11 +210,13 @@ export const NotionPage: React.FC<types.PageProps> = ({
   //   parsePageId(block?.id) === parsePageId(site?.rootNotionPageId)
   const isBlogPost =
     block?.type === 'page' && block?.parent_table === 'collection'
-  const navigationLink: NavigationLink | undefined = config?.navigationLinks?.find((link: NavigationLink) => {
-    return parsePageId(link?.pageId) === parsePageId(block?.id)
-  })
+  const navigationLink: NavigationLink | undefined =
+    config?.navigationLinks?.find((link: NavigationLink) => {
+      return parsePageId(link?.pageId) === parsePageId(block?.id)
+    })
   const isBioPage = navigationLink?.isBio
-  const isHomePage = pageId === site?.rootNotionPageId && typeof pageId !== 'undefined'
+  const isHomePage =
+    pageId === site?.rootNotionPageId && typeof pageId !== 'undefined'
 
   const showTableOfContents = !!isBlogPost
   const minTableOfContentsItems = 3

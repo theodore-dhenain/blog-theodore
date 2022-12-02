@@ -1,7 +1,7 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-nocheck
-import React from 'react'
 import Script from 'next/script'
+import React from 'react'
 
 export const HomePageCover: React.FC = () => {
   return (
