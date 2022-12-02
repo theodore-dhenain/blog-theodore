@@ -88,7 +88,7 @@ export const getStaticProps = async (context) => {
       props: {
         ...props,
         tagsPage: true,
-        propertyToFilterName
+        propertyToFilterName: propertyToFilterName || null // Fallback to null to avoid serialization issues
       },
       revalidate: 10
     }
@@ -121,7 +121,7 @@ export async function getStaticPaths() {
           .map((slug) => `/tags/${slug}`)
 
         return {
-          paths,
+          paths: paths || [], // Fallback to empty array if no path could be resolved
           fallback: true
         }
       }
