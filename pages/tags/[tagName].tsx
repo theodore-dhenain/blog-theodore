@@ -115,7 +115,7 @@ export async function getStaticPaths() {
             property[1]?.name?.toLowerCase() === tagsPropertyNameLowerCase
         )?.[1]
 
-        const paths = propertyToFilterSchema.options
+        const paths = propertyToFilterSchema?.options
           .map((option) => normalizeTitle(option.value))
           .filter(Boolean)
           .map((slug) => `/tags/${slug}`)
