@@ -1,3 +1,4 @@
+import { NavigationLink } from '@/lib/site-config';
 import * as React from 'react'
 import dynamic from 'next/dynamic'
 import Image from 'next/image'
@@ -209,8 +210,10 @@ export const NotionPage: React.FC<types.PageProps> = ({
   //   parsePageId(block?.id) === parsePageId(site?.rootNotionPageId)
   const isBlogPost =
     block?.type === 'page' && block?.parent_table === 'collection'
-  const isBioPage =
-    parsePageId(block?.id) === parsePageId('8d0062776d0c4afca96eb1ace93a7538')
+  const navigationLink: NavigationLink | undefined = config?.navigationLinks?.find((link: NavigationLink) => {
+    return parsePageId(link?.pageId) === parsePageId(block?.id)
+  })
+  const isBioPage = navigationLink?.isBio
   const isHomePage = pageId === site?.rootNotionPageId && typeof pageId !== 'undefined'
 
   const showTableOfContents = !!isBlogPost
@@ -235,7 +238,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
     } else {
       return null
     }
-  }, [isBioPage])
+  }, [isBioPage, isHomePage])
 
   if (router.isFallback) {
     return <Loading />

@@ -38,6 +38,7 @@ export interface NavigationLink {
   title: string
   pageId?: string
   url?: string
+  isBio?: boolean
 }
 
 export const siteConfig = (config: SiteConfig): SiteConfig => {
