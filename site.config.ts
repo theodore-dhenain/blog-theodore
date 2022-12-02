@@ -18,7 +18,7 @@ export default siteConfig({
 
   // social usernames (optional)
   twitter: null,
-  github: 'theodore-dhenain',
+  // github: 'theodore-dhenain',
   linkedin: 'th%C3%A9odore-dh%C3%A9nain-886447156',
   // newsletter: '#', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
