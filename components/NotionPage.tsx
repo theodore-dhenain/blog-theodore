@@ -26,7 +26,7 @@ import { searchNotion } from '@/lib/search-notion'
 import { useDarkMode } from '@/lib/use-dark-mode'
 
 import { Footer } from './Footer'
-import { GitHubShareButton } from './GitHubShareButton'
+import { HomePageCover } from './HomePageCover'
 import { Loading } from './Loading'
 import { NotionPageHeader } from './NotionPageHeader'
 import { Page404 } from './Page404'
@@ -211,6 +211,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
     block?.type === 'page' && block?.parent_table === 'collection'
   const isBioPage =
     parsePageId(block?.id) === parsePageId('8d0062776d0c4afca96eb1ace93a7538')
+  const isHomePage = pageId === site?.rootNotionPageId && typeof pageId !== 'undefined'
 
   const showTableOfContents = !!isBlogPost
   const minTableOfContentsItems = 3
@@ -225,7 +226,9 @@ export const NotionPage: React.FC<types.PageProps> = ({
   const footer = React.useMemo(() => <Footer />, [])
 
   const pageCover = React.useMemo(() => {
-    if (isBioPage) {
+    if (isHomePage) {
+      return <HomePageCover />
+    } else if (isBioPage) {
       return (
         <HeroHeader className='notion-page-cover-wrapper notion-page-cover-hero' />
       )
