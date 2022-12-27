@@ -232,7 +232,8 @@ export const NotionPage: React.FC<types.PageProps> = ({
 
   const pageCover = React.useMemo(() => {
     if (isHomePage) {
-      return <HomePageCover />
+      // return <HomePageCover />
+      return null
     } else if (isBioPage) {
       return (
         <HeroHeader className='notion-page-cover-wrapper notion-page-cover-hero' />
