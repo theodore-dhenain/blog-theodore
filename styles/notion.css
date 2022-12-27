@@ -199,6 +199,11 @@
   min-height: 23px;
 }
 
+.notion-collection-row-value a {
+ margin-left: 5px;
+ margin-right: 5px;
+}
+
 .notion-page-cover-wrapper,
 .notion-page-cover-wrapper span,
 .notion-page-cover-wrapper img {
