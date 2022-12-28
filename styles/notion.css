@@ -281,9 +281,10 @@
   border-radius: 0.5rem;
   border-bottom-left-radius: 0.125rem;
   box-decoration-break: clone;
+  background-color: unset;
+}
 
-  background-color: none;
-
+.notion-yellow_background {
   /* light yellow */
   background-image: linear-gradient(
     90deg,
