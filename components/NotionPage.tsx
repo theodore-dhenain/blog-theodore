@@ -27,7 +27,7 @@ import { NavigationLink } from '@/lib/site-config'
 import { useDarkMode } from '@/lib/use-dark-mode'
 
 import { Footer } from './Footer'
-import { HomePageCover } from './HomePageCover'
+// import { HomePageCover } from './HomePageCover'
 import { Loading } from './Loading'
 import { NotionPageHeader } from './NotionPageHeader'
 import { Page404 } from './Page404'
