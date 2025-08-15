@@ -54,11 +54,6 @@ export default siteConfig({
   navigationStyle: 'custom',
   navigationLinks: [
     {
-      title: '👋 À propos',
-      pageId: 'b9d658a17b904708b0ff46f6be45493b',
-      isBio: true
-    },
-    {
       title: '✉️ Contact',
       pageId: '27941a6ef7854aa99a8d97c30665f7ac'
     }
